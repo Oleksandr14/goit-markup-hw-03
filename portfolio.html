@@ -18,19 +18,23 @@
   <body>
     <!-- Шапка сайта -->
 
-    <header>
-      <div class="container">
-        <nav>
-          <a href="" class="logo"> <span class="accent">Web</span>Studio</a>
+    <header class="header">
+      <div class="container main-nav">
+        <a href="" class="logo"> <span class="accent">Web</span>Studio</a>
+        <nav class="navigate">
           <ul class="site-nav list">
-            <li><a href="./index.html" class="link-header">Студия</a></li>
-            <li><a href="" class="link-header current">Портфолио</a></li>
-            <li><a href="" class="link-header">Контакты</a></li>
+            <li class="item"><a href="./index.html" class="link-header">Студия</a></li>
+            <li class="item"><a href="" class="link-header current">Портфолио</a></li>
+            <li class="item"><a href="" class="link-header">Контакты</a></li>
           </ul>
         </nav>
         <ul class="contact-nav list">
-          <li><a href="mailto:info@devstudio.com" class="link-header">info@devstudio.com</a></li>
-          <li><a href="tel:+380961111111" class="link-header">+1 (425) 123-45-63</a></li>
+          <li class="item">
+            <a href="mailto:info@devstudio.com" class="link-header">info@devstudio.com</a>
+          </li>
+          <li class="item">
+            <a href="tel:+380961111111" class="link-header">+1 (425) 123-45-63</a>
+          </li>
         </ul>
       </div>
     </header>
@@ -41,15 +45,15 @@
         <div class="container">
           <!--Фильтр-->
           <ul class="filter list">
-            <li><button type="button" class="btn">Все</button></li>
-            <li><button type="button" class="btn">Веб-сайты</button></li>
-            <li><button type="button" class="btn">Приложения</button></li>
-            <li><button type="button" class="btn">Дизайн</button></li>
-            <li><button type="button" class="btn">Маркетинг</button></li>
+            <li class="btn-li"><button type="button" class="btn">Все</button></li>
+            <li class="btn-li"><button type="button" class="btn">Веб-сайты</button></li>
+            <li class="btn-li"><button type="button" class="btn">Приложения</button></li>
+            <li class="btn-li"><button type="button" class="btn">Дизайн</button></li>
+            <li class="btn-li"><button type="button" class="btn">Маркетинг</button></li>
           </ul>
           <!--Список-->
           <ul class="site-list list">
-            <li>
+            <li class="li-list">
               <a href="" class="img-link"
                 ><img
                   src="./images/image.jpg"
@@ -57,11 +61,15 @@
                   width="370"
                   class="img-li"
                 />
-                <h3 class="title">Технокряк</h3>
-                <p class="subject">Веб-сайт</p></a
+                <div class="border">
+                  <div class="border-card">
+                    <h3 class="title">Технокряк</h3>
+                    <p class="subject">Веб-сайт</p>
+                  </div>
+                </div></a
               >
             </li>
-            <li>
+            <li class="li-list">
               <a href="" class="img-link"
                 ><img
                   src="./images/image1.jpg"
@@ -69,57 +77,89 @@
                   width="370"
                   class="img-li"
                 />
-                <h3 class="title">Постер New Orlean vs Golden Star</h3>
-                <p class="subject">Дизайн</p></a
+                <div class="border">
+                  <div class="border-card">
+                    <h3 class="title">Постер New Orlean vs Golden Star</h3>
+                    <p class="subject">Дизайн</p>
+                  </div>
+                </div></a
               >
             </li>
-            <li>
+            <li class="li-list">
               <a href="" class="img-link"
                 ><img src="./images/image2.jpg" alt="Рыба" width="370" class="img-li" />
-                <h3 class="title">Ресторан Seafood</h3>
-                <p class="subject">Приложение</p></a
+                <div class="border">
+                  <div class="border-card">
+                    <h3 class="title">Ресторан Seafood</h3>
+                    <p class="subject">Приложение</p>
+                  </div>
+                </div></a
               >
             </li>
-            <li>
+            <li class="li-list">
               <a href="" class="img-link"
                 ><img src="./images/image3.jpg" alt="Наушники" width="370" class="img-li" />
-                <h3 class="title">Проект Prime</h3>
-                <p class="subject">Маркетинг</p></a
+                <div class="border">
+                  <div class="border-card">
+                    <h3 class="title">Проект Prime</h3>
+                    <p class="subject">Маркетинг</p>
+                  </div>
+                </div></a
               >
             </li>
-            <li>
+            <li class="li-list">
               <a href="" class="img-link"
                 ><img src="./images/image4.jpg" alt="Две коробки" width="370" class="img-li" />
-                <h3 class="title">Проект Boxes</h3>
-                <p class="subject">Приложение</p></a
+                <div class="border">
+                  <div class="border-card">
+                    <h3 class="title">Проект Boxes</h3>
+                    <p class="subject">Приложение</p>
+                  </div>
+                </div></a
               >
             </li>
-            <li>
+            <li class="li-list">
               <a href="" class="img-link"
                 ><img src="./images/image5.jpg" alt="Дисплей" width="370" class="img-li" />
-                <h3 class="title">Inspiration has no Borders</h3>
-                <p class="subject">Веб-сайт</p></a
+                <div class="border">
+                  <div class="border-card">
+                    <h3 class="title">Inspiration has no Borders</h3>
+                    <p class="subject">Веб-сайт</p>
+                  </div>
+                </div></a
               >
             </li>
-            <li>
+            <li class="li-list">
               <a href="" class="img-link"
                 ><img src="./images/image6.jpg" alt="Журнал" width="370" class="img-li" />
-                <h3 class="title">Издание Limited Edition</h3>
-                <p class="subject">Дизайн</p></a
+                <div class="border">
+                  <div class="border-card">
+                    <h3 class="title">Издание Limited Edition</h3>
+                    <p class="subject">Дизайн</p>
+                  </div>
+                </div></a
               >
             </li>
-            <li>
+            <li class="li-list">
               <a href="" class="img-link"
                 ><img src="./images/image7.jpg" alt="Лейбл" width="370" class="img-li" />
-                <h3 class="title">Проект LAB</h3>
-                <p class="subject">Маркетинг</p></a
+                <div class="border">
+                  <div class="border-card">
+                    <h3 class="title">Проект LAB</h3>
+                    <p class="subject">Маркетинг</p>
+                  </div>
+                </div></a
               >
             </li>
-            <li>
+            <li class="li-list">
               <a href="" class="img-link"
                 ><img src="./images/image8.jpg" alt="Ноутбук" width="370" class="img-li" />
-                <h3 class="title">Growing Business</h3>
-                <p class="subject">Приложение</p></a
+                <div class="border">
+                  <div class="border-card">
+                    <h3 class="title">Growing Business</h3>
+                    <p class="subject">Приложение</p>
+                  </div>
+                </div></a
               >
             </li>
           </ul>
@@ -134,9 +174,15 @@
         <a href="" class="logo-footer"> <span class="accent">Web</span>Studio</a>
         <address>
           <ul class="adress-nav list">
-            <li><a href="" class="link-adress">г. Киев, пр-т Леси Украинки, 26</a></li>
-            <li><a href="mailto:info@example.com" class="link-footer">info@example.com</a></li>
-            <li><a href="tel:+380991111111" class="link-footer">+38 099 111 11 11</a></li>
+            <li class="adress-list">
+              <a href="" class="link-footer link-adress">г. Киев, пр-т Леси Украинки, 26</a>
+            </li>
+            <li class="adress-list">
+              <a href="mailto:info@example.com" class="link-footer">info@example.com</a>
+            </li>
+            <li class="adress-list">
+              <a href="tel:+380991111111" class="link-footer">+38 099 111 11 11</a>
+            </li>
           </ul>
         </address>
       </div>

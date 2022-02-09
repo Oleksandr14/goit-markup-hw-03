@@ -12,33 +12,43 @@
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
     />
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
     <!-- Шапка сайта -->
-    <header>
-      <div class="container">
-        <nav>
-          <a href="" class="logo"> <span class="accent">Web</span>Studio</a>
+    <header class="header">
+      <div class="container main-nav">
+        <a href="" class="logo"> <span class="accent">Web</span>Studio</a>
+        <nav class="navigate">
           <ul class="site-nav list">
-            <li><a href="" class="link-header current">Студия</a></li>
-            <li><a href="./portfolio.html" class="link-header">Портфолио</a></li>
-            <li><a href="" class="link-header">Контакты</a></li>
+            <li class="item"><a href="" class="link-header current">Студия</a></li>
+            <li class="item"><a href="./portfolio.html" class="link-header">Портфолио</a></li>
+            <li class="item"><a href="" class="link-header">Контакты</a></li>
           </ul>
         </nav>
         <ul class="contact-nav list">
-          <li><a href="mailto:info@devstudio.com" class="link-header">info@devstudio.com</a></li>
-          <li><a href="tel:+380961111111" class="link-header">+1 (425) 123-45-63</a></li>
+          <li class="item">
+            <a href="mailto:info@devstudio.com" class="link-header">info@devstudio.com</a>
+          </li>
+          <li class="item">
+            <a href="tel:+380961111111" class="link-header">+1 (425) 123-45-63</a>
+          </li>
         </ul>
       </div>
     </header>
     <!-- Основное содержимое сайта -->
     <main>
       <!-- Герой -->
-      <section class="section hero">
+      <section class="hero">
         <div class="container">
-          <h1 class="hero-title">ЭФФЕКТИВНЫЕ РЕШЕНИЯ ДЛЯ ВАШЕГО БИЗНЕСА</h1>
+          <h1 class="hero-title">
+            ЭФФЕКТИВНЫЕ РЕШЕНИЯ <br />
+            ДЛЯ ВАШЕГО БИЗНЕСА
+          </h1>
           <button type="button" class="button">Заказать услугу</button>
         </div>
       </section>
@@ -46,45 +56,43 @@
       <section class="section">
         <div class="container">
           <ul class="feature-list list">
-            <li>
+            <li class="advantage">
               <h3 class="title">ВНИМАНИЕ К ДЕТАЛЯМ</h3>
               <p class="text">
                 Идейные соображения, а также начало повседневной работы по формированию позиции.
               </p>
             </li>
-            <li>
+            <li class="advantage">
               <h3 class="title">ПУНКТУАЛЬНОСТЬ</h3>
               <p class="text">
                 Задача организации, в особенности же рамки и место обучения кадров влечет за собой.
               </p>
             </li>
-            <li>
+            <li class="advantage">
               <h3 class="title">ПЛАНИРОВАНИЕ</h3>
               <p class="text">
                 Равным образом консультация с широким активом в значительной степени обуславливает.
               </p>
             </li>
-            <li>
+            <li class="advantage">
               <h3 class="title">СОВРЕМЕННЫЕ ТЕХНОЛОГИИ</h3>
               <p class="text">
                 Значимость этих проблем настолько очевидна, что реализация плановых заданий.
               </p>
             </li>
           </ul>
-        </div>
-      </section>
-      <!-- Чем мы занимаемся -->
-      <section class="section">
-        <div class="container">
+
+          <!-- Чем мы занимаемся -->
+
           <h2 class="section-title">Чем мы занимаемся</h2>
-          <ul class="list">
-            <li>
+          <ul class="picture-list list">
+            <li class="picture">
               <img src="./images/box1.jpg" alt="Набор текста на клавиатуре" width="370" />
             </li>
-            <li>
+            <li class="picture">
               <img src="./images/box2.jpg" alt="Смартфон в руке" width="370" />
             </li>
-            <li>
+            <li class="picture">
               <img src="./images/box3.jpg" alt="Планшет в руке" width="370" />
             </li>
           </ul>
@@ -95,7 +103,7 @@
         <div class="container">
           <h2 class="section-title">Наша команда</h2>
           <ul class="team-list list">
-            <li>
+            <li class="li-team">
               <img
                 src="./images/im1.jpg"
                 alt="Мужчина в красной рубашке в очках с бородой"
@@ -105,7 +113,7 @@
               <h3 class="title">Игорь Демьяненко</h3>
               <p class="specialty">Product Designer</p>
             </li>
-            <li>
+            <li class="li-team">
               <img
                 src="./images/im2.jpg"
                 alt="Девушка блондинка в очках"
@@ -115,7 +123,7 @@
               <h3 class="title">Ольга Репина</h3>
               <p class="specialty">Frontend Developer</p>
             </li>
-            <li>
+            <li class="li-team">
               <img
                 src="./images/im3.jpg"
                 alt="Мужчина в светло голубой рубашке"
@@ -125,7 +133,7 @@
               <h3 class="title">Николай Тарасов</h3>
               <p class="specialty">Marketing</p>
             </li>
-            <li>
+            <li class="li-team">
               <img
                 src="./images/im4.jpg"
                 alt="Мужчина в темной футболке с бородой"
@@ -145,9 +153,15 @@
         <a href="" class="logo-footer"> <span class="accent">Web</span>Studio</a>
         <address>
           <ul class="adress-nav list">
-            <li><a href="" class="link-adress">г. Киев, пр-т Леси Украинки, 26</a></li>
-            <li><a href="mailto:info@example.com" class="link-footer">info@example.com</a></li>
-            <li><a href="tel:+380991111111" class="link-footer">+38 099 111 11 11</a></li>
+            <li class="adress-list">
+              <a href="" class="link-footer link-adress">г. Киев, пр-т Леси Украинки, 26</a>
+            </li>
+            <li class="adress-list">
+              <a href="mailto:info@example.com" class="link-footer">info@example.com</a>
+            </li>
+            <li class="adress-list">
+              <a href="tel:+380991111111" class="link-footer">+38 099 111 11 11</a>
+            </li>
           </ul>
         </address>
       </div>
