@@ -34,6 +34,10 @@ ul {
   padding: 0;
 }
 
+img {
+  display: block;
+}
+
 .list {
   list-style: none;
 }
@@ -46,6 +50,12 @@ body {
 
 /*Стили для index.html*/
 
+.header {
+  padding-top: 24px;
+  padding-bottom: 25px;
+  border-bottom: 1px solid #ececec;
+}
+
 .container {
   margin-left: auto;
   margin-right: auto;
@@ -56,13 +66,7 @@ body {
 
 .main-nav {
   display: flex;
-  padding-top: 24px;
-  padding-bottom: 25px;
   align-items: center;
-}
-
-.header {
-  border-bottom: 1px solid #ececec;
 }
 
 /*Логотип*/
@@ -195,9 +199,12 @@ body {
 
 /*Преимущества*/
 
+.section.bottom {
+  padding-bottom: 47px;
+}
+
 .feature-list {
   display: flex;
-  margin-bottom: 94px;
 }
 
 .advantage {
@@ -224,6 +231,10 @@ body {
 }
 
 /*Чем мы занимаемся*/
+
+.section.top {
+  padding-top: 47px;
+}
 
 .picture-list {
   display: flex;
@@ -266,11 +277,13 @@ body {
   line-height: 1.18;
   letter-spacing: 0.03em;
   color: var(--title-text-color);
+  text-align: center;
 }
 .team-list .specialty {
   font-size: 16px;
   line-height: 1.18;
   letter-spacing: 0.03em;
+  text-align: center;
 }
 
 /*Футер*/
@@ -333,7 +346,7 @@ body {
 .filter {
   display: flex;
   justify-content: center;
-  margin-bottom: 34px;
+  margin-bottom: 50px;
 }
 
 .btn-li {
@@ -408,9 +421,9 @@ body {
   text-decoration: none;
 }
 
-.img-li {
+/*.img-li {
   display: block;
-}
+}*/
 
 .site-list .title {
   margin-bottom: 4px;
